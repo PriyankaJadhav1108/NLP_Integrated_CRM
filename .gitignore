@@ -82,7 +82,8 @@ models/
 *.onnx
 
 # FFmpeg (if you don't want to track the binary)
-# ffmpeg/
+ffmpeg/
+nlpcrmzip/nlpcrm/ffmpeg/
 
 # Temporary files
 *.tmp
