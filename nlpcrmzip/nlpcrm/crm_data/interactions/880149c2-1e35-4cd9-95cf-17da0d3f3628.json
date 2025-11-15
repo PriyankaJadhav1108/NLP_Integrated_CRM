@@ -1,0 +1,92 @@
+{
+  "interaction_id": "880149c2-1e35-4cd9-95cf-17da0d3f3628",
+  "status": "pending",
+  "interaction_type": "query",
+  "intent": "general",
+  "sentiment": "positive",
+  "customer_query": "Good job. I am so proud of you.",
+  "assistant_response": "Our refund policy allows customers to return products within 30 days of purchase. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a refund, please contact our customer service team.",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "ee5f5e84-ba6b-4813-9c5f-1794138eb519",
+    "user_id": null,
+    "timestamp": "2025-10-01T23:38:26.295953",
+    "processing_time_ms": 7561,
+    "query_metadata": {
+      "timestamp": "2025-10-01T23:38:21.114570",
+      "original_query": "Good job. I am so proud of you.",
+      "cleaned_query": "good job. i am so proud of you.",
+      "detected_intents": [
+        "support",
+        "general_inquiry",
+        "greeting",
+        "shipping",
+        "warranty",
+        "refund",
+        "payment"
+      ],
+      "primary_intent": "support",
+      "intent_confidence": 0.0,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [],
+        "action_entities": [],
+        "contact_entities": []
+      },
+      "query_length": 31,
+      "word_count": 8,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 7561,
+      "retrieved_docs_count": 3,
+      "session_id": "ee5f5e84-ba6b-4813-9c5f-1794138eb519"
+    },
+    "retrieved_docs_count": 3,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Refund policy information from knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "customer_service_kb.md"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "support",
+    "general_inquiry",
+    "greeting",
+    "shipping",
+    "warranty",
+    "refund",
+    "payment"
+  ],
+  "suggested_actions": [
+    "Contact customer service",
+    "Prepare return documentation",
+    "Check return eligibility"
+  ],
+  "follow_up_questions": [
+    "Do you have your original receipt?",
+    "What is the reason for the return?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": 0.85,
+  "response_quality_score": 0.9,
+  "created_at": "2025-10-01T23:38:26.296187",
+  "updated_at": "2025-10-01T23:38:26.296198",
+  "resolved_at": null
+}

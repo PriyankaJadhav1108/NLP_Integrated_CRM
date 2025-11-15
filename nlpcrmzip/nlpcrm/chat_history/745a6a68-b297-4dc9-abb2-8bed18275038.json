@@ -1,0 +1,20 @@
+{
+  "session_id": "745a6a68-b297-4dc9-abb2-8bed18275038",
+  "user_id": null,
+  "created_at": "2025-10-06T16:43:46.788737",
+  "last_updated": "2025-10-06T16:44:09.125819",
+  "messages": [
+    {
+      "message_id": "8d069c5c-21e9-4b73-9f3d-80968b37110a",
+      "role": "user",
+      "content": "Hello my name is Priya Nair, I came across your CRM product and I am interested in learning more about the subscription options available. Could you please send me the pricing details for both monthly and annual plans?",
+      "timestamp": "2025-10-06T16:44:09.123834"
+    },
+    {
+      "message_id": "75b0f02b-2257-4706-85b5-a7741d9ac914",
+      "role": "assistant",
+      "content": "I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+      "timestamp": "2025-10-06T16:44:09.125770"
+    }
+  ]
+}

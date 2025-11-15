@@ -1,0 +1,20 @@
+{
+  "session_id": "f69507ab-e6e8-4d53-9285-ae6ea8080b58",
+  "user_id": null,
+  "created_at": "2025-10-05T21:58:03.267857",
+  "last_updated": "2025-10-05T21:58:34.160854",
+  "messages": [
+    {
+      "message_id": "5f84757e-2744-42a1-b0cf-e3138efcd1a9",
+      "role": "user",
+      "content": "میرا name priyanka zadav hai, میرا customer ID hai, 93591424514614 aur mena abhke aase ek product ID kharidad ha kharidad ha, jis ka product ID hai, 1292614 lekin problem ye hai, lekin problem ye hai ki mge bho haritan karna hai, h никoth paya, då hisky zadav hadani blockchain t thank you",
+      "timestamp": "2025-10-05T21:58:34.157970"
+    },
+    {
+      "message_id": "fce71254-0244-4acc-8af0-9d813df7befd",
+      "role": "assistant",
+      "content": "**Payment Methods We Accept**:\n✅ All major credit cards (Visa, MasterCard, Amex)\n✅ PayPal\n✅ Bank transfers\n\n**Security**: All payments are processed through our encrypted gateway for your protection.",
+      "timestamp": "2025-10-05T21:58:34.160829"
+    }
+  ]
+}

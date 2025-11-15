@@ -1,0 +1,10 @@
+{
+  "customer_id": "test_customer_789",
+  "created_at": "2025-10-01T12:56:57.805751",
+  "interactions": [
+    "6cfadab6-30c6-49dc-9469-c52eb52425ca"
+  ],
+  "total_interactions": 1,
+  "last_interaction": "2025-10-01T12:56:57.803914",
+  "updated_at": "2025-10-01T12:56:57.805763"
+}

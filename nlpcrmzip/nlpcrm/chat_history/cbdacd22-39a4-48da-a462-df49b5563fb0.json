@@ -1,0 +1,20 @@
+{
+  "session_id": "cbdacd22-39a4-48da-a462-df49b5563fb0",
+  "user_id": null,
+  "created_at": "2025-10-02T12:37:40.830213",
+  "last_updated": "2025-10-02T12:38:06.129219",
+  "messages": [
+    {
+      "message_id": "b62bc5a4-6fd3-4004-a30b-edb703ec7a2c",
+      "role": "user",
+      "content": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+      "timestamp": "2025-10-02T12:38:06.127162"
+    },
+    {
+      "message_id": "1a33c1cb-8f6b-4938-ac4e-46513fa3e943",
+      "role": "assistant",
+      "content": "Customer Service Knowledge Base\nGeneral Policies\nRefund Policy\nOur refund policy allows customers to return products within 30 days of purchase. Refunds will be processed within 5-7 business days after we receive the returned item.\nShipping Information\nWe offer free shipping on orders over $50. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.\nProduct Support\nTechnical Issues\nFor technical support, customers can contact our support team via email at support@company.com or call our toll-free number at 1-800-SUPPORT.\nWarranty Information\nAll products come with a 1-year manufacturer warranty. Extended warranty options are available at purchase.\nAccount Management\nPassword Reset\nCustomers can reset their password by clicking the \"Forgot Password\" link on the login page. A reset link will be sent to their registered email address.\nAccount Deactivation",
+      "timestamp": "2025-10-02T12:38:06.129174"
+    }
+  ]
+}

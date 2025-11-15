@@ -1,0 +1,20 @@
+{
+  "session_id": "9719de8e-12ce-4df9-a13c-53770482445a",
+  "user_id": null,
+  "created_at": "2025-10-02T00:09:19.777596",
+  "last_updated": "2025-10-02T00:09:45.469657",
+  "messages": [
+    {
+      "message_id": "e41b510e-b152-4ac3-a159-1972cabc6b8d",
+      "role": "user",
+      "content": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+      "timestamp": "2025-10-02T00:09:45.468304"
+    },
+    {
+      "message_id": "5a8b6a86-54a7-4c64-be56-22b4ac0fd550",
+      "role": "assistant",
+      "content": "I apologize, but I'm experiencing technical difficulties. Please try rephrasing your question or contact our support team for immediate assistance.",
+      "timestamp": "2025-10-02T00:09:45.469631"
+    }
+  ]
+}

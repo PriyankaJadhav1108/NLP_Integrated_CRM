@@ -1,0 +1,69 @@
+{
+  "interaction_id": "d1b33000-f40a-4963-b6d3-8f0a0a3e61da",
+  "status": "pending",
+  "interaction_type": "sales",
+  "intent": "refund",
+  "sentiment": "neutral",
+  "customer_query": "I want to return this product because it's defective",
+  "assistant_response": "Hello! I'm here to help you with any questions about our products and services. How can I assist you today?",
+  "response_type": "greeting",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "integration_test_session",
+    "user_id": null,
+    "timestamp": "2025-10-01T12:57:18",
+    "processing_time_ms": 150,
+    "query_metadata": {
+      "timestamp": "2025-10-01T12:57:18.464153",
+      "original_query": "I want to return this product because it's defective",
+      "cleaned_query": "i want to return this product because it s defective",
+      "detected_intents": [
+        "refund",
+        "warranty",
+        "greeting"
+      ],
+      "primary_intent": "refund",
+      "intent_confidence": 0.13636363636363635,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [
+          "return"
+        ],
+        "contact_entities": []
+      },
+      "query_length": 52,
+      "word_count": 9,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true
+    },
+    "retrieved_docs_count": 0,
+    "confidence_score": 0.85,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [],
+  "conversation_context": null,
+  "customer_id": "integration_test_customer",
+  "agent_id": null,
+  "department": null,
+  "priority": 2,
+  "tags": [
+    "return",
+    "defective",
+    "product"
+  ],
+  "suggested_actions": [],
+  "follow_up_questions": [],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-01T12:57:18.465016",
+  "updated_at": "2025-10-01T12:57:18.465021",
+  "resolved_at": null
+}

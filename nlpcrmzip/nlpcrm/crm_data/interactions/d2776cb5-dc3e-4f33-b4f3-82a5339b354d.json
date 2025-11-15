@@ -1,0 +1,59 @@
+{
+  "interaction_id": "d2776cb5-dc3e-4f33-b4f3-82a5339b354d",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "general",
+  "sentiment": "neutral",
+  "customer_query": "My attorney will start a lawsuit and I’ll file with the FTC.”",
+  "assistant_response": "Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.",
+  "response_type": "escalation",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "de82eebe-196e-499f-b78a-2a5222be4434",
+    "user_id": null,
+    "timestamp": "2025-10-03T01:42:13.647171",
+    "processing_time_ms": 10354,
+    "query_metadata": null,
+    "retrieved_docs_count": 1,
+    "confidence_score": 0.8,
+    "escalation_reason": "High-risk legal/compliance trigger detected (keywords: attorney, lawsuit; regulators: FTC)",
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "fallback",
+      "content": "Automatic legal/compliance trigger",
+      "relevance_score": 1,
+      "metadata": {
+        "matched": {
+          "reason": "High-risk legal/compliance trigger detected (keywords: attorney, lawsuit; regulators: FTC)",
+          "queue": "Legal/Compliance",
+          "keywords": [
+            "lawsuit",
+            "attorney"
+          ],
+          "regulators": [
+            "FTC"
+          ]
+        }
+      }
+    }
+  ],
+  "conversation_context": null,
+  "customer_id": "ui_customer",
+  "agent_id": null,
+  "department": null,
+  "priority": 3,
+  "tags": [
+    "Assign to Legal/Compliance queue",
+    "Review customer contract and transcripts"
+  ],
+  "suggested_actions": [],
+  "follow_up_questions": [],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T01:42:13.647311",
+  "updated_at": "2025-10-03T01:42:13.647321",
+  "resolved_at": null
+}

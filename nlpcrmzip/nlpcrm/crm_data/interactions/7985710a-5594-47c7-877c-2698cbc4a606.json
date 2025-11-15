@@ -1,0 +1,95 @@
+{
+  "interaction_id": "7985710a-5594-47c7-877c-2698cbc4a606",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "warranty",
+  "sentiment": "neutral",
+  "customer_query": "Hello my name is Priyanka Zadhar, my customer ID is 231496 and I am calling you regarding the warranty issue of the product ID 12345. I want help regarding the warranty, so help me.",
+  "assistant_response": "Customer Service Knowledge Base\nGeneral Policies\nRefund Policy\nOur refund policy allows customers to return products within 30 days of purchase. Refunds will be processed within 5-7 business days after we receive the returned item.\nShipping Information\nWe offer free shipping on orders over $50. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.\nProduct Support\nTechnical Issues\nFor technical support, customers can contact our support team via email at support@company.com or call our toll-free number at 1-800-SUPPORT.\nWarranty Information\nAll products come with a 1-year manufacturer warranty. Extended warranty options are available at purchase.\nAccount Management\nPassword Reset\nCustomers can reset their password by clicking the \"Forgot Password\" link on the login page. A reset link will be sent to their registered email address.\nAccount Deactivation",
+  "response_type": "answer",
+  "confidence": "medium",
+  "metadata": {
+    "session_id": "219214b1-d3c4-4799-b48e-88fbf3f2fd22",
+    "user_id": null,
+    "timestamp": "2025-10-02T12:39:20.841227",
+    "processing_time_ms": 20020,
+    "query_metadata": {
+      "timestamp": "2025-10-02T12:39:07.468699",
+      "original_query": "Hello my name is Priyanka Zadhar, my customer ID is 231496 and I am calling you regarding the warranty issue of the product ID 12345. I want help regarding the warranty, so help me.",
+      "cleaned_query": "hello my name is priyanka zadhar, my customer id is 231496 and i am calling you regarding the warranty issue of the product id 12345. i want help regarding the warranty, so help me.",
+      "detected_intents": [
+        "greeting",
+        "warranty",
+        "support",
+        "complaint",
+        "general_inquiry",
+        "shipping"
+      ],
+      "primary_intent": "greeting",
+      "intent_confidence": 0.0967741935483871,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product",
+          "12345"
+        ],
+        "action_entities": [],
+        "contact_entities": [
+          "help"
+        ],
+        "person_entities": [
+          "priyanka zadhar"
+        ]
+      },
+      "query_length": 181,
+      "word_count": 34,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 20020,
+      "retrieved_docs_count": 2,
+      "session_id": "219214b1-d3c4-4799-b48e-88fbf3f2fd22"
+    },
+    "retrieved_docs_count": 2,
+    "confidence_score": null,
+    "escalation_reason": "Technical error in response generation",
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "fallback",
+      "content": "Fallback response due to system error",
+      "relevance_score": 0.0,
+      "metadata": {
+        "error": "1 validation error for InformationSource\nrelevance_score\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-7.353201389312744, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.11/v/greater_than_equal"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "greeting",
+    "warranty",
+    "support",
+    "complaint",
+    "general_inquiry",
+    "shipping"
+  ],
+  "suggested_actions": [
+    "Try rephrasing your question",
+    "Contact support team",
+    "Check system status"
+  ],
+  "follow_up_questions": [],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-02T12:39:20.841402",
+  "updated_at": "2025-10-02T12:39:20.841409",
+  "resolved_at": null
+}

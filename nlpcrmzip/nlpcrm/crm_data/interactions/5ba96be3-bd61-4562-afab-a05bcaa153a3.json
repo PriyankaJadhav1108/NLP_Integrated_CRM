@@ -1,0 +1,49 @@
+{
+  "interaction_id": "5ba96be3-bd61-4562-afab-a05bcaa153a3",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "refund",
+  "sentiment": "neutral",
+  "customer_query": "i want help regarding the refund policy?",
+  "assistant_response": "I understand you received a damaged product and want a refund. Here's what you can do:\n\n✅ **Return Policy**: You can return products within 30 days of purchase\n✅ **Process**: Refunds are processed within 5-7 business days after we receive the item\n✅ **Next Step**: Contact our support team at support@company.com or call 1-800-SUPPORT to initiate the return\n\nWe'll make this right for you!",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "95d417a4-920d-4a5b-8d87-13971ff545d6",
+    "user_id": null,
+    "timestamp": "2025-10-06T16:18:16.701267",
+    "processing_time_ms": 26830,
+    "query_metadata": null,
+    "retrieved_docs_count": 1,
+    "confidence_score": 0.8,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": null,
+  "customer_id": "ui_customer",
+  "agent_id": null,
+  "department": null,
+  "priority": 3,
+  "tags": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "suggested_actions": [],
+  "follow_up_questions": [],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-06T16:18:16.701386",
+  "updated_at": "2025-10-06T16:18:16.701391",
+  "resolved_at": null
+}

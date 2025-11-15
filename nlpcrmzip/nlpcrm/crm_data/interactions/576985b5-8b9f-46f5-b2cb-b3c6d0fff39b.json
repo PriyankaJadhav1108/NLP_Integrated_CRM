@@ -1,0 +1,86 @@
+{
+  "interaction_id": "576985b5-8b9f-46f5-b2cb-b3c6d0fff39b",
+  "status": "pending",
+  "interaction_type": "query",
+  "intent": "general",
+  "sentiment": "neutral",
+  "customer_query": "You are stupid and useless! I will sue you!",
+  "assistant_response": "I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+  "response_type": "answer",
+  "confidence": "medium",
+  "metadata": {
+    "session_id": "08d7da44-048a-4edf-836d-b4992127f94c",
+    "user_id": null,
+    "timestamp": "2025-10-03T02:18:45.312763",
+    "processing_time_ms": 8012,
+    "query_metadata": {
+      "timestamp": "2025-10-03T02:18:39.915603",
+      "original_query": "You are stupid and useless! I will sue you!",
+      "cleaned_query": "you are stupid and useless! i will sue you!",
+      "detected_intents": [
+        "complaint",
+        "goodbye",
+        "general_inquiry",
+        "payment",
+        "shipping"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.0,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [],
+        "action_entities": [],
+        "contact_entities": []
+      },
+      "query_length": 43,
+      "word_count": 9,
+      "has_question_mark": false,
+      "has_exclamation": true,
+      "is_greeting": false,
+      "is_goodbye": true,
+      "requires_escalation": true,
+      "processing_time_ms": 8012,
+      "retrieved_docs_count": 1,
+      "session_id": "08d7da44-048a-4edf-836d-b4992127f94c"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "User: My attorney will start a lawsuit and I'll file with the FTC.\nAssistant: Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.\nUser: My attorney will start a lawsuit and I'll file with the FTC.\nAssistant: Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "goodbye",
+    "general_inquiry",
+    "payment",
+    "shipping"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T02:18:45.312913",
+  "updated_at": "2025-10-03T02:18:45.312917",
+  "resolved_at": null
+}

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP CRM System - Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .header p {
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-header {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .card-header h2 {
+            font-size: 1.3rem;
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-header p {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .interaction-item {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        .interaction-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+        }
+
+        .interaction-header {
+            background: #f8f9fa;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .interaction-id {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .status-pending { background: #fff3cd; color: #856404; }
+        .status-escalated { background: #f8d7da; color: #721c24; }
+        .status-resolved { background: #d4edda; color: #155724; }
+        .status-in-progress { background: #cce5ff; color: #004085; }
+
+        .interaction-body {
+            padding: 1rem;
+        }
+
+        .interaction-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-label {
+            color: #6c757d;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .meta-value {
+            color: #495057;
+        }
+
+        .intent-badge, .sentiment-badge {
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .intent-refund { background: #e3f2fd; color: #1976d2; }
+        .intent-shipping { background: #f3e5f5; color: #7b1fa2; }
+        .intent-support { background: #e8f5e8; color: #388e3c; }
+        .intent-general { background: #f5f5f5; color: #616161; }
+
+        .sentiment-positive { background: #e8f5e8; color: #2e7d32; }
+        .sentiment-negative { background: #ffebee; color: #c62828; }
+        .sentiment-neutral { background: #f5f5f5; color: #616161; }
+        .sentiment-mixed { background: #fff3e0; color: #ef6c00; }
+
+        .interaction-content {
+            margin-top: 1rem;
+        }
+
+        .query-text {
+            background: #f8f9fa;
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
+            font-style: italic;
+            border-left: 3px solid #667eea;
+        }
+
+        .response-text {
+            background: #e8f5e8;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border-left: 3px solid #28a745;
+        }
+
+        .actions {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd8;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            background: #e0a800;
+        }
+
+        .btn-sm {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.8rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #6c757d;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 1rem;
+            color: #495057;
+        }
+
+        .refresh-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .refresh-btn:hover {
+            background: #5a6fd8;
+            transform: scale(1.1);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #e9ecef;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 1rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #e9ecef;
+        }
+
+        .timeline-header {
+            background: #f8f9fa;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .timeline-timestamp {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .timeline-content {
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NLP CRM System Dashboard</h1>
+        <p>Customer Interaction Management & Analytics</p>
+    </div>
+
+    <div class="container">
+        <!-- Statistics Overview -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalInteractions">-</div>
+                <div class="stat-label">Total Interactions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pendingInteractions">-</div>
+                <div class="stat-label">Pending</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="escalatedInteractions">-</div>
+                <div class="stat-label">Escalated</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="escalationRate">-</div>
+                <div class="stat-label">Escalation Rate</div>
+            </div>
+        </div>
+
+        <!-- Main Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- Triage View -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>🚨 Triage View</h2>
+                    <p>Interactions requiring immediate attention</p>
+                </div>
+                <div class="card-body">
+                    <div id="triageContent">
+                        <div class="loading">Loading triage data...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interaction Timeline -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>📋 Interaction Timeline</h2>
+                    <p>Recent customer interactions and metadata</p>
+                </div>
+                <div class="card-body">
+                    <div id="timelineContent">
+                        <div class="loading">Loading timeline data...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Refresh Button -->
+    <button class="refresh-btn" onclick="refreshDashboard()" title="Refresh Dashboard">
+        🔄
+    </button>
+
+    <script>
+        const API_BASE = 'http://127.0.0.1:8000/api/v1';
+
+        // Load dashboard data
+        async function loadDashboard() {
+            try {
+                await Promise.all([
+                    loadStats(),
+                    loadTriageView(),
+                    loadTimeline()
+                ]);
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+                showError('Failed to load dashboard data');
+            }
+        }
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/stats`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    const stats = data.stats;
+                    document.getElementById('totalInteractions').textContent = stats.total_interactions || 0;
+                    document.getElementById('pendingInteractions').textContent = stats.by_status?.pending || 0;
+                    document.getElementById('escalatedInteractions').textContent = stats.by_status?.escalated || 0;
+                    document.getElementById('escalationRate').textContent = 
+                        ((stats.escalation_rate || 0) * 100).toFixed(1) + '%';
+                } else {
+                    throw new Error(data.error || 'Failed to load stats');
+                }
+            } catch (error) {
+                console.error('Error loading stats:', error);
+                document.getElementById('statsGrid').innerHTML = 
+                    '<div class="error">Failed to load statistics</div>';
+            }
+        }
+
+        // Load triage view
+        async function loadTriageView() {
+            try {
+                const response = await fetch(`${API_BASE}/triage?limit=10`);
+                const data = await response.json();
+                
+                const container = document.getElementById('triageContent');
+                
+                if (data.success && data.interactions.length > 0) {
+                    container.innerHTML = data.interactions.map(interaction => 
+                        createInteractionCard(interaction, true)
+                    ).join('');
+                } else {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <h3>No interactions require triage</h3>
+                            <p>All interactions are currently resolved or in progress.</p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading triage view:', error);
+                document.getElementById('triageContent').innerHTML = 
+                    '<div class="error">Failed to load triage data</div>';
+            }
+        }
+
+        // Load timeline
+        async function loadTimeline() {
+            try {
+                const response = await fetch(`${API_BASE}/interactions?limit=20`);
+                const data = await response.json();
+                
+                const container = document.getElementById('timelineContent');
+                
+                if (data.success && data.interactions.length > 0) {
+                    container.innerHTML = `
+                        <div class="timeline">
+                            ${data.interactions.map(interaction => 
+                                createTimelineItem(interaction)
+                            ).join('')}
+                        </div>
+                    `;
+                } else {
+                    container.innerHTML = `
+                        <div class="empty-state">
+                            <h3>No interactions found</h3>
+                            <p>Start by processing some customer queries.</p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading timeline:', error);
+                document.getElementById('timelineContent').innerHTML = 
+                    '<div class="error">Failed to load timeline data</div>';
+            }
+        }
+
+        // Create interaction card for triage view
+        function createInteractionCard(interaction, showActions = false) {
+            const statusClass = `status-${interaction.status}`;
+            const intentClass = `intent-${interaction.intent}`;
+            const sentimentClass = `sentiment-${interaction.sentiment}`;
+            
+            return `
+                <div class="interaction-item">
+                    <div class="interaction-header">
+                        <div class="interaction-id">${interaction.interaction_id.substring(0, 8)}...</div>
+                        <div class="status-badge ${statusClass}">${interaction.status}</div>
+                    </div>
+                    <div class="interaction-body">
+                        <div class="interaction-meta">
+                            <div class="meta-item">
+                                <div class="meta-label">Intent</div>
+                                <div class="intent-badge ${intentClass}">${interaction.intent}</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Sentiment</div>
+                                <div class="sentiment-badge ${sentimentClass}">${interaction.sentiment}</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Priority</div>
+                                <div class="meta-value">${interaction.priority}/5</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Type</div>
+                                <div class="meta-value">${interaction.interaction_type}</div>
+                            </div>
+                        </div>
+                        <div class="interaction-content">
+                            <div class="query-text">
+                                <strong>Customer:</strong> ${interaction.customer_query}
+                            </div>
+                            <div class="response-text">
+                                <strong>Assistant:</strong> ${interaction.assistant_response}
+                            </div>
+                        </div>
+                        ${showActions ? `
+                            <div class="actions">
+                                <button class="btn btn-primary btn-sm" onclick="viewInteraction('${interaction.interaction_id}')">
+                                    View Details
+                                </button>
+                                <button class="btn btn-success btn-sm" onclick="updateStatus('${interaction.interaction_id}', 'in_progress')">
+                                    Start
+                                </button>
+                                <button class="btn btn-warning btn-sm" onclick="updateStatus('${interaction.interaction_id}', 'resolved')">
+                                    Resolve
+                                </button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Create timeline item
+        function createTimelineItem(interaction) {
+            const statusClass = `status-${interaction.status}`;
+            const intentClass = `intent-${interaction.intent}`;
+            const sentimentClass = `sentiment-${interaction.sentiment}`;
+            
+            return `
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="interaction-id">${interaction.interaction_id.substring(0, 8)}...</div>
+                            <div class="status-badge ${statusClass}">${interaction.status}</div>
+                        </div>
+                        <div class="timeline-timestamp">
+                            ${new Date(interaction.created_at).toLocaleString()}
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="interaction-meta">
+                            <div class="meta-item">
+                                <div class="meta-label">Intent</div>
+                                <div class="intent-badge ${intentClass}">${interaction.intent}</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Sentiment</div>
+                                <div class="sentiment-badge ${sentimentClass}">${interaction.sentiment}</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Customer ID</div>
+                                <div class="meta-value">${interaction.customer_id || 'Anonymous'}</div>
+                            </div>
+                            <div class="meta-item">
+                                <div class="meta-label">Confidence</div>
+                                <div class="meta-value">${interaction.confidence}</div>
+                            </div>
+                        </div>
+                        <div class="interaction-content">
+                            <div class="query-text">
+                                <strong>Query:</strong> ${interaction.customer_query}
+                            </div>
+                            <div class="response-text">
+                                <strong>Response:</strong> ${interaction.assistant_response}
+                            </div>
+                        </div>
+                        ${interaction.escalation_required ? `
+                            <div style="margin-top: 1rem; padding: 0.75rem; background: #fff3cd; border-radius: 6px; border-left: 3px solid #ffc107;">
+                                <strong>⚠️ Escalation Required:</strong> ${interaction.metadata.escalation_reason || 'Manual review needed'}
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Update interaction status
+        async function updateStatus(interactionId, status) {
+            try {
+                const response = await fetch(`${API_BASE}/interactions/${interactionId}/status`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        status: status,
+                        agent_id: 'current_user' // In real app, get from auth
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showSuccess(`Interaction ${status} successfully`);
+                    refreshDashboard();
+                } else {
+                    throw new Error(data.error || 'Failed to update status');
+                }
+            } catch (error) {
+                console.error('Error updating status:', error);
+                showError('Failed to update interaction status');
+            }
+        }
+
+        // View interaction details
+        function viewInteraction(interactionId) {
+            // In a real app, this would open a detailed modal or navigate to a detail page
+            alert(`Viewing interaction: ${interactionId}\n\nIn a real application, this would open a detailed view with full interaction data, customer history, and management tools.`);
+        }
+
+        // Refresh dashboard
+        function refreshDashboard() {
+            loadDashboard();
+        }
+
+        // Show success message
+        function showSuccess(message) {
+            // In a real app, use a proper notification system
+            alert(`✅ ${message}`);
+        }
+
+        // Show error message
+        function showError(message) {
+            // In a real app, use a proper notification system
+            alert(`❌ ${message}`);
+        }
+
+        // Auto-refresh every 30 seconds
+        setInterval(refreshDashboard, 30000);
+
+        // Load dashboard on page load
+        document.addEventListener('DOMContentLoaded', loadDashboard);
+    </script>
+</body>
+</html>

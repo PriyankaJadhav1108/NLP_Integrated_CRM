@@ -1,0 +1,91 @@
+{
+  "interaction_id": "8386d6a8-f0aa-4d26-90f5-dc96a2c1381f",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "general",
+  "sentiment": "neutral",
+  "customer_query": "My attorney will start a lawsuit and I’ll file with the FTC.”",
+  "assistant_response": "Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.",
+  "response_type": "escalation",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "de82eebe-196e-499f-b78a-2a5222be4434",
+    "user_id": null,
+    "timestamp": "2025-10-03T01:41:22.814740",
+    "processing_time_ms": 10354,
+    "query_metadata": {
+      "timestamp": "2025-10-03T01:41:15.915598",
+      "original_query": "My attorney will start a lawsuit and I’ll file with the FTC.”",
+      "cleaned_query": "my attorney will start a lawsuit and i ll file with the ftc.",
+      "detected_intents": [
+        "complaint",
+        "shipping"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.0,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [],
+        "action_entities": [],
+        "contact_entities": []
+      },
+      "query_length": 61,
+      "word_count": 12,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": false,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 10354,
+      "retrieved_docs_count": 1,
+      "session_id": "de82eebe-196e-499f-b78a-2a5222be4434"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": "High-risk legal/compliance trigger detected (keywords: attorney, lawsuit; regulators: FTC)",
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "fallback",
+      "content": "Automatic legal/compliance trigger",
+      "relevance_score": 1.0,
+      "metadata": {
+        "matched": {
+          "reason": "High-risk legal/compliance trigger detected (keywords: attorney, lawsuit; regulators: FTC)",
+          "queue": "Legal/Compliance",
+          "keywords": [
+            "lawsuit",
+            "attorney"
+          ],
+          "regulators": [
+            "FTC"
+          ]
+        }
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": "Legal/Compliance",
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "shipping",
+    "legal_risk"
+  ],
+  "suggested_actions": [
+    "Assign to Legal/Compliance queue",
+    "Review customer contract and transcripts"
+  ],
+  "follow_up_questions": [
+    "Please provide any case numbers or prior notices received."
+  ],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T01:41:22.814958",
+  "updated_at": "2025-10-03T01:41:22.814964",
+  "resolved_at": null
+}

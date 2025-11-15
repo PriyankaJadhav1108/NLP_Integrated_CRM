@@ -1,0 +1,22 @@
+{
+  "customer_id": "ui_customer",
+  "created_at": "2025-10-03T00:12:46.961204",
+  "interactions": [
+    "83432fdc-9b4e-48ee-8d98-6aaffabfbb01",
+    "d2776cb5-dc3e-4f33-b4f3-82a5339b354d",
+    "f2166b28-110f-461a-8f8d-5f1c6eb5ebca",
+    "e5913b87-02bb-4d3b-8583-1e090d895372",
+    "31b92d3e-d012-407e-87ed-4075a8090a13",
+    "c396e843-e35c-45c7-8f3f-5c0cfd254b9b",
+    "f6154192-c8c8-407d-aaa2-46c12b77cccf",
+    "5ba96be3-bd61-4562-afab-a05bcaa153a3",
+    "b720a715-8f07-40a8-b9d7-a7d105364f63",
+    "6dc5778c-2b7f-4114-adfa-c1c2c11afdef",
+    "a9ac437c-f3d0-4171-aa9d-1b7ae65b6e0d",
+    "97c54b40-097e-4410-9fd5-832364873695",
+    "90411bc1-6168-4f6d-89b2-bdd03751a5bf"
+  ],
+  "total_interactions": 13,
+  "last_interaction": "2025-11-03T14:31:06.677706",
+  "updated_at": "2025-11-03T14:31:06.683274"
+}

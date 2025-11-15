@@ -1,0 +1,20 @@
+{
+  "session_id": "04a4effe-d5f7-46a5-af00-96e770c991e7",
+  "user_id": null,
+  "created_at": "2025-10-02T14:10:30.537376",
+  "last_updated": "2025-10-02T14:10:50.817987",
+  "messages": [
+    {
+      "message_id": "0dda9558-24c0-4a10-8e73-af3902156e57",
+      "role": "user",
+      "content": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+      "timestamp": "2025-10-02T14:10:50.816187"
+    },
+    {
+      "message_id": "966ac6ed-8a7a-4e53-8e76-1aa4fda3804c",
+      "role": "assistant",
+      "content": "Customer Service Knowledge Base\nGeneral Policies\nRefund Policy\nOur refund policy allows customers to return products within 30 days of purchase. Refunds will be processed within 5-7 business days after we receive the returned item.\nShipping Information\nWe offer free shipping on orders over $50. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.\nProduct Support\nTechnical Issues\nFor technical support, customers can contact our support team via email at support@company.com or call our toll-free number at 1-800-SUPPORT.\nWarranty Information\nAll products come with a 1-year manufacturer warranty. Extended warranty options are available at purchase.\nAccount Management\nPassword Reset\nCustomers can reset their password by clicking the \"Forgot Password\" link on the login page. A reset link will be sent to their registered email address.\nAccount Deactivation\nTo deactivate an account, customers should contact customer service. Account data will be retained for 90 days after deactivation.\nBilling and Payments\nPayment Methods\nWe accept all major credit cards, PayPal, and bank transfers. Payment is processed securely through our encrypted payment gateway.\nBilling Disputes\nFor billing disputes, customers should contact our billing department within 60 days of the charge. We will investigate and resolve disputes within 10 business days.\nContact Information\nCustomer Service Hours\nOur customer service team is available Monday through Friday, 9 AM to 6 PM EST.\nEmergency Support\nFor urgent issues outside business hours, customers can use our emergency support line at 1-800-EMERGENCY.",
+      "timestamp": "2025-10-02T14:10:50.817948"
+    }
+  ]
+}

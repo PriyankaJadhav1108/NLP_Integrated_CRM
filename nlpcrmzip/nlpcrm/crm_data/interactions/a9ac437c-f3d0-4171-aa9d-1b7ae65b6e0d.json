@@ -1,0 +1,49 @@
+{
+  "interaction_id": "a9ac437c-f3d0-4171-aa9d-1b7ae65b6e0d",
+  "status": "pending",
+  "interaction_type": "support",
+  "intent": "support",
+  "sentiment": "positive",
+  "customer_query": "Hello, my name is Asmita Shah, I just wanted to take a moment to appreciate the quick and efficient support received yesterday. Your team was not only polite but also solved my issue within a minute. I am really impressed by the professionalism soon. Keep the good work best regards.",
+  "assistant_response": "**Contact Our Support Team**:\n📧 **Email**: support@company.com\n📞 **Phone**: 1-800-SUPPORT\n🕒 **Hours**: Monday-Friday, 9 AM to 6 PM EST\n🚨 **Emergency**: 1-800-EMERGENCY (after hours)\n\nWe're here to help!",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "0e61694c-a0f4-4074-85e2-589204d36147",
+    "user_id": null,
+    "timestamp": "2025-10-07T11:52:24.580796",
+    "processing_time_ms": 33128,
+    "query_metadata": null,
+    "retrieved_docs_count": 1,
+    "confidence_score": 0.8,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": null,
+  "customer_id": "ui_customer",
+  "agent_id": null,
+  "department": null,
+  "priority": 2,
+  "tags": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "suggested_actions": [],
+  "follow_up_questions": [],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-07T11:52:24.581754",
+  "updated_at": "2025-10-07T11:52:24.581769",
+  "resolved_at": null
+}

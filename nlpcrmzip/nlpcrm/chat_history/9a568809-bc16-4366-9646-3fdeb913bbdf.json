@@ -1,0 +1,20 @@
+{
+  "session_id": "9a568809-bc16-4366-9646-3fdeb913bbdf",
+  "user_id": null,
+  "created_at": "2025-10-07T14:23:34.107171",
+  "last_updated": "2025-10-07T14:23:54.630068",
+  "messages": [
+    {
+      "message_id": "1c1d6b00-20f4-41ed-832d-338287c6f4f1",
+      "role": "user",
+      "content": "Hello, my name is Asmita Maheta. I am extremely disappointed with how my recent order was handled. The product arrived damaged and despite multiple emails I haven't received a replacement or a refund. This is unacceptable and I expect immediate resolution and I'll have to escalate this further.",
+      "timestamp": "2025-10-07T14:23:54.628633"
+    },
+    {
+      "message_id": "6d84ef7d-9fd2-44b3-88f6-001fd7a850ee",
+      "role": "assistant",
+      "content": "I understand you received a damaged product and want a refund. Here's what you can do:\n\n✅ **Return Policy**: You can return products within 30 days of purchase\n✅ **Process**: Refunds are processed within 5-7 business days after we receive the item\n✅ **Next Step**: Contact our support team at support@company.com or call 1-800-SUPPORT to initiate the return\n\nWe'll make this right for you!",
+      "timestamp": "2025-10-07T14:23:54.629996"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "session_id": "08d7da44-048a-4edf-836d-b4992127f94c",
+  "user_id": "test_user_123",
+  "created_at": "2025-10-03T02:17:54.903249",
+  "last_updated": "2025-10-03T02:19:02.177818",
+  "messages": [
+    {
+      "message_id": "fe5d11af-f680-4e8e-82de-5a27b1c495bd",
+      "role": "user",
+      "content": "My attorney will start a lawsuit and I'll file with the FTC.",
+      "timestamp": "2025-10-03T02:18:12.201166"
+    },
+    {
+      "message_id": "3fe14a56-8520-484a-83d0-60a7283c703e",
+      "role": "assistant",
+      "content": "Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.",
+      "timestamp": "2025-10-03T02:18:12.202726"
+    },
+    {
+      "message_id": "e44da873-4297-4a4f-86c1-0c4fac4412aa",
+      "role": "user",
+      "content": "My attorney will start a lawsuit and I'll file with the FTC.",
+      "timestamp": "2025-10-03T02:18:32.091443"
+    },
+    {
+      "message_id": "241b385e-689d-44f8-854d-90856d4de9d6",
+      "role": "assistant",
+      "content": "Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.",
+      "timestamp": "2025-10-03T02:18:32.093003"
+    },
+    {
+      "message_id": "fc31bbd1-1475-4642-8a13-58050baed411",
+      "role": "user",
+      "content": "You are stupid and useless! I will sue you!",
+      "timestamp": "2025-10-03T02:18:45.309950"
+    },
+    {
+      "message_id": "61cbdb89-67c3-44fe-8fba-1abc027738ed",
+      "role": "assistant",
+      "content": "I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+      "timestamp": "2025-10-03T02:18:45.311552"
+    },
+    {
+      "message_id": "b1cfaac6-93a8-403e-ae28-79b878fa0c64",
+      "role": "user",
+      "content": "What is your refund policy? I need help with my order.",
+      "timestamp": "2025-10-03T02:19:02.176211"
+    },
+    {
+      "message_id": "9de5fc44-de2c-441f-b054-b5b4cfa74d57",
+      "role": "assistant",
+      "content": "**Refund Policy**: You can return products within 30 days of purchase. Refunds are processed within 5-7 business days after we receive the returned item.\n\nTo start a return, contact support@company.com or call 1-800-SUPPORT.",
+      "timestamp": "2025-10-03T02:19:02.177787"
+    }
+  ]
+}

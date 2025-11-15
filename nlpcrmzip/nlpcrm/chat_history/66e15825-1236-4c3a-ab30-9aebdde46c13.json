@@ -1,0 +1,20 @@
+{
+  "session_id": "66e15825-1236-4c3a-ab30-9aebdde46c13",
+  "user_id": "test_user",
+  "created_at": "2025-10-01T12:30:56.887094",
+  "last_updated": "2025-10-01T12:30:56.890119",
+  "messages": [
+    {
+      "message_id": "e989a928-7081-4629-9a0b-086b8e919f6f",
+      "role": "user",
+      "content": "Hello, I need help",
+      "timestamp": "2025-10-01T12:30:56.888446"
+    },
+    {
+      "message_id": "1705711a-f79a-4a20-8da4-2e963d55c91b",
+      "role": "assistant",
+      "content": "I'm here to help!",
+      "timestamp": "2025-10-01T12:30:56.890070"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "interaction_id": "1d21c4b9-4f77-4119-bf1f-6ea513c20b57",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "refund",
+  "sentiment": "negative",
+  "customer_query": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+  "assistant_response": "Customer Service Knowledge Base\nGeneral Policies\nRefund Policy\nOur refund policy allows customers to return products within 30 days of purchase. Refunds will be processed within 5-7 business days after we receive the returned item.\nShipping Information\nWe offer free shipping on orders over $50. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.\nProduct Support\nTechnical Issues\nFor technical support, customers can contact our support team via email at support@company.com or call our toll-free number at 1-800-SUPPORT.\nWarranty Information\nAll products come with a 1-year manufacturer warranty. Extended warranty options are available at purchase.\nAccount Management\nPassword Reset\nCustomers can reset their password by clicking the \"Forgot Password\" link on the login page. A reset link will be sent to their registered email address.\nAccount Deactivation\nTo deactivate an account, customers should contact customer service. Account data will be retained for 90 days after deactivation.\nBilling and Payments\nPayment Methods\nWe accept all major credit cards, PayPal, and bank transfers. Payment is processed securely through our encrypted payment gateway.\nBilling Disputes\nFor billing disputes, customers should contact our billing department within 60 days of the charge. We will investigate and resolve disputes within 10 business days.\nContact Information\nCustomer Service Hours\nOur customer service team is available Monday through Friday, 9 AM to 6 PM EST.\nEmergency Support\nFor urgent issues outside business hours, customers can use our emergency support line at 1-800-EMERGENCY.",
+  "response_type": "answer",
+  "confidence": "medium",
+  "metadata": {
+    "session_id": "a051369c-ad57-453b-8a1f-71c9bd889b65",
+    "user_id": null,
+    "timestamp": "2025-10-02T14:16:34.427000",
+    "processing_time_ms": 20336,
+    "query_metadata": {
+      "timestamp": "2025-10-02T14:16:21.265063",
+      "original_query": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+      "cleaned_query": "hello, i am anushka gargelwar. i want to register a complaint regarding a damaged product received. i want to return it and want to have that referred. please help me regarding this issue.",
+      "detected_intents": [
+        "complaint",
+        "greeting",
+        "general_inquiry",
+        "shipping",
+        "support"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.13043478260869565,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [
+          "return"
+        ],
+        "contact_entities": [
+          "help"
+        ]
+      },
+      "query_length": 188,
+      "word_count": 33,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 20336,
+      "retrieved_docs_count": 1,
+      "session_id": "a051369c-ad57-453b-8a1f-71c9bd889b65"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": "Technical error in response generation",
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "fallback",
+      "content": "Fallback response due to system error",
+      "relevance_score": 0.0,
+      "metadata": {
+        "error": "1 validation error for InformationSource\nrelevance_score\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-8.788579940795898, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.11/v/greater_than_equal"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "greeting",
+    "general_inquiry",
+    "shipping",
+    "support"
+  ],
+  "suggested_actions": [
+    "Try rephrasing your question",
+    "Contact support team",
+    "Check system status"
+  ],
+  "follow_up_questions": [],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-02T14:16:34.427346",
+  "updated_at": "2025-10-02T14:16:34.427355",
+  "resolved_at": null
+}

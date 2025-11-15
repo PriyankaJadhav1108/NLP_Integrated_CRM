@@ -1,0 +1,100 @@
+{
+  "interaction_id": "09266560-c32a-46cc-8fc7-941440a999ac",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "complaint",
+  "sentiment": "negative",
+  "customer_query": "میرا name priyanka zadav hai, میرا customer ID hai, 93591424514614 aur mena abhke aase ek product ID kharidad ha kharidad ha, jis ka product ID hai, 1292614 lekin problem ye hai, lekin problem ye hai ki mge bho haritan karna hai, Shan dum,",
+  "assistant_response": "I'm sorry to hear you're having an issue. I want to help resolve this for you right away.\n\n**Immediate Actions**:\n1. Contact our support team at support@company.com or 1-800-SUPPORT\n2. Reference this conversation for faster service\n3. Ask to speak with a supervisor if needed\n\n**Our Promise**: We'll work to resolve your issue within 24 hours.",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "479ab39f-57ed-4f8c-a54b-3a8f09274a33",
+    "user_id": null,
+    "timestamp": "2025-10-05T23:43:01.601543",
+    "processing_time_ms": 20751,
+    "query_metadata": {
+      "timestamp": "2025-10-05T23:42:49.131030",
+      "original_query": "میرا name priyanka zadav hai, میرا customer ID hai, 93591424514614 aur mena abhke aase ek product ID kharidad ha kharidad ha, jis ka product ID hai, 1292614 lekin problem ye hai, lekin problem ye hai ki mge bho haritan karna hai, Shan dum,",
+      "cleaned_query": "میرا name priyanka zadav hai, میرا customer id hai, 93591424514614 aur mena abhke aase ek product id kharidad ha kharidad ha, jis ka product id hai, 1292614 lekin problem ye hai, lekin problem ye hai ki mge bho haritan karna hai, shan dum,",
+      "detected_intents": [
+        "complaint",
+        "payment",
+        "greeting",
+        "support",
+        "shipping",
+        "warranty",
+        "refund",
+        "general_inquiry"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.0,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [],
+        "contact_entities": []
+      },
+      "sentiment": {
+        "label": "negative",
+        "score": 0.9838364720344543
+      },
+      "language": "en",
+      "query_length": 239,
+      "word_count": 43,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "priority": 5,
+      "processing_time_ms": 20751,
+      "retrieved_docs_count": 1,
+      "session_id": "479ab39f-57ed-4f8c-a54b-3a8f09274a33"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "payment",
+    "greeting",
+    "support",
+    "shipping",
+    "warranty",
+    "refund",
+    "general_inquiry"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-05T23:43:01.601687",
+  "updated_at": "2025-10-05T23:43:01.601691",
+  "resolved_at": null
+}

@@ -1,0 +1,20 @@
+{
+  "session_id": "f064a7ac-ee90-4985-bd4c-9069f06af924",
+  "user_id": null,
+  "created_at": "2025-10-03T01:40:34.327900",
+  "last_updated": "2025-10-03T01:40:43.907590",
+  "messages": [
+    {
+      "message_id": "6911e95e-0804-4ab4-a6c2-a5ba651196ad",
+      "role": "user",
+      "content": "open http://127.0.0.1:8000/crm",
+      "timestamp": "2025-10-03T01:40:43.905688"
+    },
+    {
+      "message_id": "85ae398d-1c70-4067-a78e-857ac9a39ea0",
+      "role": "assistant",
+      "content": "I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+      "timestamp": "2025-10-03T01:40:43.907535"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "session_id": "b86587a9-9099-4bc5-9482-d599ee746757",
+  "user_id": null,
+  "created_at": "2025-10-06T15:58:17.518388",
+  "last_updated": "2025-10-06T15:59:02.246754",
+  "messages": [
+    {
+      "message_id": "0e2b6e4a-deed-4759-a27b-eff683e78438",
+      "role": "user",
+      "content": "Hello, my name is Asmita Shah, I just wanted to take a moment to appreciate the quick and efficient support received yesterday. Your team was not only polite but also solved my issue within a minute. I am really impressed by the professionalism soon. Keep the good work best regards.",
+      "timestamp": "2025-10-06T15:59:02.242288"
+    },
+    {
+      "message_id": "ea486036-9bd7-404f-9367-add83a507de0",
+      "role": "assistant",
+      "content": "**Contact Our Support Team**:\n📧 **Email**: support@company.com\n📞 **Phone**: 1-800-SUPPORT\n🕒 **Hours**: Monday-Friday, 9 AM to 6 PM EST\n🚨 **Emergency**: 1-800-EMERGENCY (after hours)\n\nWe're here to help!",
+      "timestamp": "2025-10-06T15:59:02.246049"
+    }
+  ]
+}

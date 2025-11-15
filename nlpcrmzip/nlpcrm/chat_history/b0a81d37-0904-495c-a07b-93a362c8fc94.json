@@ -1,0 +1,20 @@
+{
+  "session_id": "b0a81d37-0904-495c-a07b-93a362c8fc94",
+  "user_id": null,
+  "created_at": "2025-10-01T23:39:05.186428",
+  "last_updated": "2025-10-01T23:39:12.757925",
+  "messages": [
+    {
+      "message_id": "afda883c-9ffc-42ca-9390-63835199e5ec",
+      "role": "user",
+      "content": "Good job. I am so proud of you.",
+      "timestamp": "2025-10-01T23:39:12.756149"
+    },
+    {
+      "message_id": "8be0165f-c443-40c4-b95c-d4e599f31cc1",
+      "role": "assistant",
+      "content": "Our refund policy allows customers to return products within 30 days of purchase. Refunds are processed within 5-7 business days after we receive the returned item. To initiate a refund, please contact our customer service team.",
+      "timestamp": "2025-10-01T23:39:12.757880"
+    }
+  ]
+}

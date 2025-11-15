@@ -1,0 +1,49 @@
+{
+  "interaction_id": "83432fdc-9b4e-48ee-8d98-6aaffabfbb01",
+  "status": "pending",
+  "interaction_type": "query",
+  "intent": "general",
+  "sentiment": "neutral",
+  "customer_query": "extract the entity that are mentioned in the transribed audio",
+  "assistant_response": "**Warranty Coverage**: All products come with a 1-year manufacturer warranty from the date of purchase.\n\n✅ **What's Covered**: Manufacturing defects and hardware failures\n✅ **Extended Options**: Available at purchase for longer coverage\n\nFor warranty claims, contact our support team with your order details.",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "0ab57e51-7042-47ff-ac97-b974e62ebe4d",
+    "user_id": null,
+    "timestamp": "2025-10-03T00:12:46.958637",
+    "processing_time_ms": 19921,
+    "query_metadata": null,
+    "retrieved_docs_count": 1,
+    "confidence_score": 0.8,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": null,
+  "customer_id": "ui_customer",
+  "agent_id": null,
+  "department": null,
+  "priority": 2,
+  "tags": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "suggested_actions": [],
+  "follow_up_questions": [],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T00:12:46.958750",
+  "updated_at": "2025-10-03T00:12:46.958756",
+  "resolved_at": null
+}

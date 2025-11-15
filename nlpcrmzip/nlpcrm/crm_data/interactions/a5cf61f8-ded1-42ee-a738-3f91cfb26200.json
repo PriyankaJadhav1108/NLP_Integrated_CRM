@@ -1,0 +1,105 @@
+{
+  "interaction_id": "a5cf61f8-ded1-42ee-a738-3f91cfb26200",
+  "status": "pending",
+  "interaction_type": "query",
+  "intent": "greeting",
+  "sentiment": "neutral",
+  "customer_query": "Hello my name is Priya Nair, I came across your CRM product and I am interested in learning more about the subscription options available. Could you please send me the pricing details for both monthly and annual plans?",
+  "assistant_response": "I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+  "response_type": "answer",
+  "confidence": "medium",
+  "metadata": {
+    "session_id": "d4c0f10b-3d05-42b5-8e09-119e2c2293e7",
+    "user_id": null,
+    "timestamp": "2025-10-06T18:31:26.588794",
+    "processing_time_ms": 24450,
+    "query_metadata": {
+      "timestamp": "2025-10-06T18:31:10.125756",
+      "original_query": "Hello my name is Priya Nair, I came across your CRM product and I am interested in learning more about the subscription options available. Could you please send me the pricing details for both monthly and annual plans?",
+      "cleaned_query": "hello my name is priya nair, i came across your crm product and i am interested in learning more about the subscription options available. could you please send me the pricing details for both monthly and annual plans?",
+      "detected_intents": [
+        "greeting",
+        "support",
+        "general_inquiry",
+        "shipping",
+        "payment",
+        "complaint"
+      ],
+      "primary_intent": "greeting",
+      "intent_confidence": 0.03225806451612903,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [
+          "send"
+        ],
+        "contact_entities": [],
+        "person_entities": [
+          "priya na"
+        ],
+        "product_ids": [],
+        "customer_ids": [],
+        "emails": [],
+        "phone_numbers": []
+      },
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9909932017326355
+      },
+      "language": "en",
+      "query_length": 218,
+      "word_count": 38,
+      "has_question_mark": true,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "priority": 5,
+      "processing_time_ms": 24450,
+      "retrieved_docs_count": 1,
+      "session_id": "d4c0f10b-3d05-42b5-8e09-119e2c2293e7"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "greeting",
+    "support",
+    "general_inquiry",
+    "shipping",
+    "payment",
+    "complaint"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-06T18:31:26.588984",
+  "updated_at": "2025-10-06T18:31:26.588989",
+  "resolved_at": null
+}

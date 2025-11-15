@@ -1,0 +1,32 @@
+{
+  "session_id": "282d89ac-d734-4c95-8c28-39789cd8266f",
+  "user_id": "test_user",
+  "created_at": "2025-10-01T12:32:58.587259",
+  "last_updated": "2025-10-01T12:32:58.593258",
+  "messages": [
+    {
+      "message_id": "27137307-e038-42fe-9d9c-dbe3b0812788",
+      "role": "user",
+      "content": "Hello",
+      "timestamp": "2025-10-01T12:32:58.588305"
+    },
+    {
+      "message_id": "6738f821-3eb3-41c5-b46f-9c27bada6185",
+      "role": "assistant",
+      "content": "Hi there!",
+      "timestamp": "2025-10-01T12:32:58.589617"
+    },
+    {
+      "message_id": "6bf84657-0096-43db-80df-221c93469e0b",
+      "role": "user",
+      "content": "How are you?",
+      "timestamp": "2025-10-01T12:32:58.591086"
+    },
+    {
+      "message_id": "cbde0681-da33-44f2-98f7-5ae8518b05a7",
+      "role": "assistant",
+      "content": "I'm doing well, thank you!",
+      "timestamp": "2025-10-01T12:32:58.593174"
+    }
+  ]
+}

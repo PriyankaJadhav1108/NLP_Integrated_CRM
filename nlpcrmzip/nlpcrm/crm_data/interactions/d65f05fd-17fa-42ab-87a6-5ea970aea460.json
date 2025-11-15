@@ -1,0 +1,91 @@
+{
+  "interaction_id": "d65f05fd-17fa-42ab-87a6-5ea970aea460",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "refund",
+  "sentiment": "negative",
+  "customer_query": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+  "assistant_response": "I apologize, but I'm experiencing technical difficulties. Please try rephrasing your question or contact our support team for immediate assistance.",
+  "response_type": "error",
+  "confidence": "low",
+  "metadata": {
+    "session_id": "c8b9cf5f-91d5-4e53-9176-4d47545379d3",
+    "user_id": null,
+    "timestamp": "2025-10-01T23:57:50.093803",
+    "processing_time_ms": 12557,
+    "query_metadata": {
+      "timestamp": "2025-10-01T23:57:40.835771",
+      "original_query": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+      "cleaned_query": "hello, i am anushka gargelwar. i want to register a complaint regarding a damaged product received. i want to return it and want to have that referred. please help me regarding this issue.",
+      "detected_intents": [
+        "complaint",
+        "greeting",
+        "general_inquiry",
+        "shipping",
+        "support"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.13043478260869565,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [
+          "return"
+        ],
+        "contact_entities": [
+          "help"
+        ]
+      },
+      "query_length": 188,
+      "word_count": 33,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 12557,
+      "retrieved_docs_count": 3,
+      "session_id": "c8b9cf5f-91d5-4e53-9176-4d47545379d3"
+    },
+    "retrieved_docs_count": 3,
+    "confidence_score": null,
+    "escalation_reason": "Technical error in response generation",
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "fallback",
+      "content": "Fallback response due to system error",
+      "relevance_score": 0.0,
+      "metadata": {
+        "error": "1 validation error for InformationSource\nrelevance_score\n  Input should be greater than or equal to 0 [type=greater_than_equal, input_value=-8.75292682647705, input_type=float]\n    For further information visit https://errors.pydantic.dev/2.11/v/greater_than_equal"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "greeting",
+    "general_inquiry",
+    "shipping",
+    "support"
+  ],
+  "suggested_actions": [
+    "Try rephrasing your question",
+    "Contact support team",
+    "Check system status"
+  ],
+  "follow_up_questions": [],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-01T23:57:50.094008",
+  "updated_at": "2025-10-01T23:57:50.094015",
+  "resolved_at": null
+}

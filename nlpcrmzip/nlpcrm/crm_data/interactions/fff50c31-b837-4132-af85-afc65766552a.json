@@ -1,0 +1,92 @@
+{
+  "interaction_id": "fff50c31-b837-4132-af85-afc65766552a",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "refund",
+  "sentiment": "negative",
+  "customer_query": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+  "assistant_response": "I understand you received a damaged product and want a refund. Here's what you can do:\n\n✅ **Return Policy**: You can return products within 30 days of purchase\n✅ **Process**: Refunds are processed within 5-7 business days after we receive the item\n✅ **Next Step**: Contact our support team at support@company.com or call 1-800-SUPPORT to initiate the return\n\nWe'll make this right for you!",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "a3082b05-a21a-46a9-aed8-578c546addd9",
+    "user_id": null,
+    "timestamp": "2025-10-03T01:32:09.806040",
+    "processing_time_ms": 12030,
+    "query_metadata": {
+      "timestamp": "2025-10-03T01:32:01.965240",
+      "original_query": "Hello, I am Anushka Gargelwar. I want to register a complaint regarding a damaged product received. I want to return it and want to have that referred. Please help me regarding this issue.",
+      "cleaned_query": "hello, i am anushka gargelwar. i want to register a complaint regarding a damaged product received. i want to return it and want to have that referred. please help me regarding this issue.",
+      "detected_intents": [
+        "complaint",
+        "greeting",
+        "general_inquiry",
+        "shipping",
+        "support"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.13043478260869565,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [
+          "return"
+        ],
+        "contact_entities": [
+          "help"
+        ]
+      },
+      "query_length": 188,
+      "word_count": 33,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 12030,
+      "retrieved_docs_count": 1,
+      "session_id": "a3082b05-a21a-46a9-aed8-578c546addd9"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "greeting",
+    "general_inquiry",
+    "shipping",
+    "support"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T01:32:09.806244",
+  "updated_at": "2025-10-03T01:32:09.806249",
+  "resolved_at": null
+}

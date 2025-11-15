@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP CRM Dashboard</title>
+    <meta name="theme-color" content="#0b0f1a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css?v=3">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>NLP CRM Dashboard</h1>
+            <p>Customer Interaction Management & Analytics</p>
+            <div class="header-actions">
+                <button id="openSettings" class="btn btn-primary btn-small">Settings</button>
+                <button id="toggleTheme" class="btn btn-small" title="Toggle dark/light">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="ask">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Ask</h2>
+                    <p>Query the knowledge base (type or use server-side ASR)</p>
+                </div>
+                <div class="card-body">
+                    <div class="ask-row">
+                        <input id="askInput" class="input" type="text" placeholder="Type your question..." />
+                        <button id="askBtn" class="btn btn-primary">Ask</button>
+                    </div>
+                    <div class="ask-row">
+                        <textarea id="asrInput" class="input" placeholder="ASR transcript (auto-filled from audio)" rows="4"></textarea>
+                    </div>
+                    <div class="ask-row">
+                        <input id="audioFile" class="input" type="file" accept="audio/*" />
+                        <button id="asrBtn" class="btn">Transcribe Audio</button>
+                    </div>
+                    <div id="answerBox" class="answer-box" style="display:none">
+                        <div class="answer-meta">
+                            <span id="answerType" class="pill"></span>
+                            <span id="answerConfidence" class="pill"></span>
+                        </div>
+                        <div id="answerText" class="answer-text"></div>
+                        <div id="factsBox" class="facts" style="display:none">
+                            <h4>Definitive Facts</h4>
+                            <div id="factsContent" class="meta-value"></div>
+                        </div>
+                        <div class="ask-actions">
+                            <button id="logBtn" class="btn btn-success">Log to CRM</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Enhanced NLP Analysis card positioned directly below the Ask card -->
+        <section class="nlp-summary" id="nlpSummarySection" style="display:none">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Enhanced NLP Analysis</h2>
+                    <p>Comprehensive text analysis with sentiment, entities, and priority scoring</p>
+                </div>
+                <div class="card-body">
+                    <!-- Summary Section -->
+                    <div class="enhanced-nlp-section">
+                        <h4>📝 Text Summary</h4>
+                        <div id="enhancedSummary" class="enhanced-summary">-</div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="enhanced-nlp-section">
+                        <h4>📈 Key Metrics</h4>
+                        <div class="meta">
+                            <div>
+                                <div class="meta-label"><strong>Intent Category</strong></div>
+                                <div class="meta-value" id="enhancedIntent">-</div>
+                            </div>
+                            <div>
+                                <div class="meta-label"><strong>Priority Level</strong></div>
+                                <div class="meta-value" id="enhancedPriority">-</div>
+                            </div>
+                            <div>
+                                <div class="meta-label"><strong>Word Count</strong></div>
+                                <div class="meta-value" id="enhancedWordCount">-</div>
+                            </div>
+                            <div>
+                                <div class="meta-label"><strong>Language</strong></div>
+                                <div class="meta-value" id="enhancedLanguage">-</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sentiment Analysis -->
+                    <div class="enhanced-nlp-section">
+                        <h4>🧠 Sentiment Analysis</h4>
+                        <div class="meta">
+                            <div>
+                                <div class="meta-label"><strong>Overall Sentiment</strong></div>
+                                <div class="meta-value" id="enhancedSentiment">-</div>
+                            </div>
+                            <div>
+                                <div class="meta-label"><strong>Polarity</strong></div>
+                                <div class="meta-value" id="enhancedPolarity">-</div>
+                            </div>
+                            <div>
+                                <div class="meta-label"><strong>Subjectivity</strong></div>
+                                <div class="meta-value" id="enhancedSubjectivity">-</div>
+                            </div>
+                            <div>
+                                <div class="meta-label"><strong>Tone</strong></div>
+                                <div class="meta-value" id="enhancedTone">-</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Named Entities -->
+                    <div class="enhanced-nlp-section">
+                        <h4>🆔 Named Entities</h4>
+                        <div id="enhancedEntities" class="enhanced-entities">-</div>
+                    </div>
+
+                    <!-- Keywords -->
+                    <div class="enhanced-nlp-section">
+                        <h4>🔑 Key Topics & Keywords</h4>
+                        <div id="enhancedKeywords" class="enhanced-keywords">-</div>
+                    </div>
+
+                    <!-- Analysis Timestamp -->
+                    <div class="enhanced-nlp-section">
+                        <div class="meta-label"><strong>Analysis completed:</strong> <span id="enhancedTimestamp">-</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <section class="risk-classification">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Risk Classification Engine</h2>
+                    <p>Analyze customer text for legal/compliance and toxicity risks</p>
+                </div>
+                <div class="card-body">
+                    <div class="ask-row">
+                        <input id="riskInput" class="input" type="text" placeholder="Enter customer text to analyze for risks..." />
+                        <button id="riskBtn" class="btn btn-warning">Analyze Risk</button>
+                    </div>
+                    <div id="riskResults" class="risk-results" style="display:none">
+                        <div class="risk-header">
+                            <h4>Risk Analysis Results</h4>
+                        </div>
+                        <div class="risk-indicators">
+                            <div id="toxicityIndicator" class="risk-indicator">
+                                <span class="risk-label">Toxicity:</span>
+                                <span id="toxicityStatus" class="risk-status"></span>
+                                <div id="toxicityTerms" class="risk-terms"></div>
+                            </div>
+                            <div id="complianceIndicator" class="risk-indicator">
+                                <span class="risk-label">Compliance:</span>
+                                <span id="complianceStatus" class="risk-status"></span>
+                                <div id="complianceTerms" class="risk-terms"></div>
+                            </div>
+                        </div>
+                        <div id="escalationWarning" class="escalation-warning" style="display:none">
+                            <div class="warning-icon">⚠️</div>
+                            <div class="warning-text">
+                                <strong>High Risk Detected!</strong> This interaction requires immediate escalation to Legal/Compliance team.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="stats" id="stats">
+            <div class="stat">
+                <div class="stat-number" id="totalInteractions">-</div>
+                <div class="stat-label">Total Interactions</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="pendingInteractions">-</div>
+                <div class="stat-label">Pending</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="escalatedInteractions">-</div>
+                <div class="stat-label">Escalated</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="escalationRate">-</div>
+                <div class="stat-label">Escalation Rate</div>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Triage View</h2>
+                    <p>Interactions requiring attention</p>
+                </div>
+                <div class="card-body" id="triage"></div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Interaction Timeline</h2>
+                    <p>Recent customer interactions</p>
+                </div>
+                <div class="card-body" id="timeline"></div>
+            </div>
+        </section>
+
+        <button class="fab" id="refreshBtn" title="Refresh">⟲</button>
+        <button class="fab fab-secondary" id="themeFab" title="Toggle dark/light">🌙</button>
+    </main>
+
+    <div id="settingsModal" class="modal" style="display:none">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <button id="closeSettings" class="btn btn-ghost">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-row">
+                    <label>NLP API Base (no trailing slash)</label>
+                    <input id="nlpBase" class="input" placeholder="http://127.0.0.1:8000" />
+                </div>
+                <div class="form-row">
+                    <label>CRM API Base</label>
+                    <input id="crmBase" class="input" placeholder="http://127.0.0.1:8000/api/v1" />
+                </div>
+                <div class="form-row">
+                    <label>API Key (sent as X-API-Key)</label>
+                    <input id="apiKey" class="input" placeholder="your_api_key" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="saveSettings" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js?v=2"></script>
+</body>
+</html>
+
+

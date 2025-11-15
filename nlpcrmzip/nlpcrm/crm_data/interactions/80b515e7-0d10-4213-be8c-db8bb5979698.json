@@ -1,0 +1,96 @@
+{
+  "interaction_id": "80b515e7-0d10-4213-be8c-db8bb5979698",
+  "status": "pending",
+  "interaction_type": "support",
+  "intent": "warranty",
+  "sentiment": "neutral",
+  "customer_query": "Hello my name is Priyanka Zadhar, my customer ID is 231496 and I am calling you regarding the warranty issue of the product ID 12345. I want help regarding the warranty, so help me.",
+  "assistant_response": "**Warranty Coverage**: All products come with a 1-year manufacturer warranty from the date of purchase.\n\n✅ **What's Covered**: Manufacturing defects and hardware failures\n✅ **Extended Options**: Available at purchase for longer coverage\n\nFor warranty claims, contact our support team with your order details.",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "3c206015-fa0c-4c48-95af-0b86ff93ee24",
+    "user_id": null,
+    "timestamp": "2025-10-03T00:13:06.911004",
+    "processing_time_ms": 19622,
+    "query_metadata": {
+      "timestamp": "2025-10-03T00:12:53.692911",
+      "original_query": "Hello my name is Priyanka Zadhar, my customer ID is 231496 and I am calling you regarding the warranty issue of the product ID 12345. I want help regarding the warranty, so help me.",
+      "cleaned_query": "hello my name is priyanka zadhar, my customer id is 231496 and i am calling you regarding the warranty issue of the product id 12345. i want help regarding the warranty, so help me.",
+      "detected_intents": [
+        "greeting",
+        "warranty",
+        "support",
+        "complaint",
+        "general_inquiry",
+        "shipping"
+      ],
+      "primary_intent": "greeting",
+      "intent_confidence": 0.0967741935483871,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product",
+          "12345"
+        ],
+        "action_entities": [],
+        "contact_entities": [
+          "help"
+        ],
+        "person_entities": [
+          "priyanka zadhar"
+        ]
+      },
+      "query_length": 181,
+      "word_count": 34,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 19622,
+      "retrieved_docs_count": 1,
+      "session_id": "3c206015-fa0c-4c48-95af-0b86ff93ee24"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "greeting",
+    "warranty",
+    "support",
+    "complaint",
+    "general_inquiry",
+    "shipping"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T00:13:06.911264",
+  "updated_at": "2025-10-03T00:13:06.911276",
+  "resolved_at": null
+}

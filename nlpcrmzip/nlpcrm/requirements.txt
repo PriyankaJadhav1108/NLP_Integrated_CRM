@@ -1,0 +1,117 @@
+# === Core web API ===
+fastapi==0.118.0
+uvicorn==0.37.0
+pydantic==2.11.10
+python-multipart==0.0.20
+
+# === HTTP client stack (Python 3.13 compatible) ===
+httpx==0.28.1
+httpcore==1.0.9
+h11==0.16.0
+h2==4.3.0
+hyperframe==6.1.0
+hpack==4.1.0
+idna==3.10
+rfc3986==1.5.0
+
+# === NLP / LLM / Embeddings ===
+transformers==4.57.0
+torch==2.8.0
+sentence-transformers==5.1.1
+rank-bm25==0.2.2
+scikit-learn==1.7.2
+spacy==3.8.7
+# Remember to download the model at runtime: `python -m spacy download en_core_web_sm`
+
+# === Vector DB ===
+chromadb==1.1.1
+
+# === LangChain ecosystem ===
+langchain==0.3.27
+langchain-community==0.3.30
+langchain-core==0.3.78
+langchain-text-splitters==0.3.11
+langsmith==0.4.32
+
+# === OpenAI / Tokenization ===
+openai==2.1.0
+tiktoken==0.11.0
+
+# === General utilities ===
+python-dotenv==1.1.1
+numpy==2.3.3
+pandas==2.3.3
+
+# === Document / file processing ===
+PyPDF2==3.0.1
+python-docx==1.2.0
+Markdown==3.9
+
+# === Audio / ASR (choose one path) ===
+# Path A: Cloud Whisper via OpenAI (requires $env:OPENAI_API_KEY)
+#   No extra packages required beyond `openai` above.
+# Path B: Local Whisper model (CPU)
+openai-whisper==20231117
+soundfile==0.13.1
+pydub==0.25.1
+
+# === Optional translation and language detection ===
+# We keep these optional to avoid breaking the HTTP stack on Py 3.13.
+textblob==0.19.0
+langdetect==1.0.9
+# Prefer deep-translator for fewer dependency conflicts. If you must use googletrans,
+# install it WITHOUT deps to avoid downgrading httpx/httpcore.
+deep-translator==1.11.4
+# googletrans==4.0.0-rc1  # not recommended; if needed: `pip install --no-deps googletrans==4.0.0-rc1`
+
+# === Firebase (if you use the CRM cloud features) ===
+firebase-admin==7.1.0
+
+# === Testing / Tooling ===
+pytest==8.4.2
+black==25.9.0
+flake8==7.3.0
+# Core NLP and ML libraries
+langchain>=0.1.0
+langchain-community>=0.0.10
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+openai>=1.0.0
+
+# Document processing
+pypdf2>=3.0.0
+python-docx>=1.0.0
+markdown>=3.5.0
+
+# Web framework for API
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+tiktoken>=0.5.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Phase 2: Hybrid Search and Reranking
+rank-bm25>=0.2.2
+transformers>=4.20.0
+torch>=1.11.0
+scikit-learn>=1.1.0
+spacy>=3.7.0
+firebase-admin>=6.5.0
+
+# Phase 4: API and LLM Integration
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0
+python-multipart>=0.0.6
+pydub>=0.25.1
+soundfile>=0.12.1
+
+# Development and testing
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+httpx>=0.25.0

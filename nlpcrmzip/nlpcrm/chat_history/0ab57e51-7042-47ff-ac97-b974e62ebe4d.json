@@ -1,0 +1,20 @@
+{
+  "session_id": "0ab57e51-7042-47ff-ac97-b974e62ebe4d",
+  "user_id": null,
+  "created_at": "2025-10-03T00:11:28.197749",
+  "last_updated": "2025-10-03T00:11:48.118208",
+  "messages": [
+    {
+      "message_id": "29c821b8-3403-43e0-a1f5-a08d803349c8",
+      "role": "user",
+      "content": "Hello my name is Priyanka Zadhar, my customer ID is 231496 and I am calling you regarding the warranty issue of the product ID 12345. I want help regarding the warranty, so help me.",
+      "timestamp": "2025-10-03T00:11:48.116673"
+    },
+    {
+      "message_id": "807ef683-a080-4d94-8142-f4b97bb6bb4f",
+      "role": "assistant",
+      "content": "**Warranty Coverage**: All products come with a 1-year manufacturer warranty from the date of purchase.\n\n✅ **What's Covered**: Manufacturing defects and hardware failures\n✅ **Extended Options**: Available at purchase for longer coverage\n\nFor warranty claims, contact our support team with your order details.",
+      "timestamp": "2025-10-03T00:11:48.118178"
+    }
+  ]
+}

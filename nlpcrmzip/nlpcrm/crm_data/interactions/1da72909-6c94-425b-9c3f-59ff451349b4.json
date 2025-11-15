@@ -1,0 +1,84 @@
+{
+  "interaction_id": "1da72909-6c94-425b-9c3f-59ff451349b4",
+  "status": "pending",
+  "interaction_type": "query",
+  "intent": "general",
+  "sentiment": "neutral",
+  "customer_query": "open http://127.0.0.1:8000/crm",
+  "assistant_response": "I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+  "response_type": "answer",
+  "confidence": "medium",
+  "metadata": {
+    "session_id": "f064a7ac-ee90-4985-bd4c-9069f06af924",
+    "user_id": null,
+    "timestamp": "2025-10-03T01:40:43.909063",
+    "processing_time_ms": 9580,
+    "query_metadata": {
+      "timestamp": "2025-10-03T01:40:37.926893",
+      "original_query": "open http://127.0.0.1:8000/crm",
+      "cleaned_query": "open http 127. 0. 0. 1 8000 crm",
+      "detected_intents": [
+        "support",
+        "general_inquiry",
+        "greeting",
+        "payment"
+      ],
+      "primary_intent": "support",
+      "intent_confidence": 0.0,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [],
+        "action_entities": [],
+        "contact_entities": []
+      },
+      "query_length": 30,
+      "word_count": 2,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 9580,
+      "retrieved_docs_count": 1,
+      "session_id": "f064a7ac-ee90-4985-bd4c-9069f06af924"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "support",
+    "general_inquiry",
+    "greeting",
+    "payment"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T01:40:43.909440",
+  "updated_at": "2025-10-03T01:40:43.909449",
+  "resolved_at": null
+}

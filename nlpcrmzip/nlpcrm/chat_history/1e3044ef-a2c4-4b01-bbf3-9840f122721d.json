@@ -1,0 +1,20 @@
+{
+  "session_id": "1e3044ef-a2c4-4b01-bbf3-9840f122721d",
+  "user_id": null,
+  "created_at": "2025-10-05T22:40:06.908423",
+  "last_updated": "2025-10-05T22:40:33.372969",
+  "messages": [
+    {
+      "message_id": "8a96f65e-bf58-4e8b-b589-df593f80d8de",
+      "role": "user",
+      "content": "میرا name priyanka zadav hai, میرا customer ID hai, 93591424514614 aur mena abhke aase ek product ID kharidad ha kharidad ha, jis ka product ID hai, 1292614 lekin problem ye hai, lekin problem ye hai ki mge bho haritan karna hai, to ham cripaya wa suki jean karidad hi je hai ..",
+      "timestamp": "2025-10-05T22:40:33.370769"
+    },
+    {
+      "message_id": "17b9c9b1-698e-4848-882b-c69e855df937",
+      "role": "assistant",
+      "content": "**Payment Methods We Accept**:\n✅ All major credit cards (Visa, MasterCard, Amex)\n✅ PayPal\n✅ Bank transfers\n\n**Security**: All payments are processed through our encrypted gateway for your protection.",
+      "timestamp": "2025-10-05T22:40:33.372945"
+    }
+  ]
+}

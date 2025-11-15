@@ -1,0 +1,20 @@
+{
+  "session_id": "00ba3fc6-5bf4-4d07-8c8a-127dc8c51c2f",
+  "user_id": null,
+  "created_at": "2025-10-03T01:41:02.250825",
+  "last_updated": "2025-10-03T01:41:12.451658",
+  "messages": [
+    {
+      "message_id": "1717654c-ecad-44fa-804e-247b178dabed",
+      "role": "user",
+      "content": "My attorney will start a lawsuit and I’ll file with the FTC.”",
+      "timestamp": "2025-10-03T01:41:12.450240"
+    },
+    {
+      "message_id": "3965de5c-8be4-4387-bc3b-cf0501f5cab0",
+      "role": "assistant",
+      "content": "Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.",
+      "timestamp": "2025-10-03T01:41:12.451589"
+    }
+  ]
+}

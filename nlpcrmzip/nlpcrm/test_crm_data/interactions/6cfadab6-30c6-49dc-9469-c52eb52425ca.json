@@ -1,0 +1,43 @@
+{
+  "interaction_id": "6cfadab6-30c6-49dc-9469-c52eb52425ca",
+  "status": "resolved",
+  "interaction_type": "support",
+  "intent": "support",
+  "sentiment": "neutral",
+  "customer_query": "I need help with my account",
+  "assistant_response": "I'd be happy to help you with your account. What specific issue are you experiencing?",
+  "response_type": "helpful",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "test_session_123",
+    "user_id": "test_user_456",
+    "timestamp": "2025-10-01T12:56:57.803813",
+    "processing_time_ms": null,
+    "query_metadata": null,
+    "retrieved_docs_count": null,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "test"
+  },
+  "sources": [],
+  "conversation_context": null,
+  "customer_id": "test_customer_789",
+  "agent_id": "test_agent_001",
+  "department": null,
+  "priority": 2,
+  "tags": [
+    "account",
+    "support"
+  ],
+  "suggested_actions": [
+    "check_account_status",
+    "verify_identity"
+  ],
+  "follow_up_questions": [],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-01T12:56:57.803914",
+  "updated_at": "2025-10-01T12:56:57.836216",
+  "resolved_at": "2025-10-01T12:56:57.836253"
+}

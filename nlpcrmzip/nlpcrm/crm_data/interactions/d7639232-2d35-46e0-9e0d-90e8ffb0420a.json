@@ -1,0 +1,92 @@
+{
+  "interaction_id": "d7639232-2d35-46e0-9e0d-90e8ffb0420a",
+  "status": "pending",
+  "interaction_type": "sales",
+  "intent": "refund",
+  "sentiment": "neutral",
+  "customer_query": "What is your refund policy? I need help with my order.",
+  "assistant_response": "**Refund Policy**: You can return products within 30 days of purchase. Refunds are processed within 5-7 business days after we receive the returned item.\n\nTo start a return, contact support@company.com or call 1-800-SUPPORT.",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "08d7da44-048a-4edf-836d-b4992127f94c",
+    "user_id": null,
+    "timestamp": "2025-10-03T02:19:02.179118",
+    "processing_time_ms": 8887,
+    "query_metadata": {
+      "timestamp": "2025-10-03T02:18:56.242408",
+      "original_query": "What is your refund policy? I need help with my order.",
+      "cleaned_query": "what is your refund policy? i need help with my order.",
+      "detected_intents": [
+        "complaint",
+        "refund",
+        "general_inquiry",
+        "support",
+        "shipping"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.08695652173913043,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "order"
+        ],
+        "action_entities": [
+          "refund"
+        ],
+        "contact_entities": [
+          "help"
+        ]
+      },
+      "query_length": 54,
+      "word_count": 11,
+      "has_question_mark": true,
+      "has_exclamation": false,
+      "is_greeting": false,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "processing_time_ms": 8887,
+      "retrieved_docs_count": 1,
+      "session_id": "08d7da44-048a-4edf-836d-b4992127f94c"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "User: My attorney will start a lawsuit and I'll file with the FTC.\nAssistant: Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.\nUser: My attorney will start a lawsuit and I'll file with the FTC.\nAssistant: Your message indicates a potential legal or regulatory matter. I am escalating this interaction to our Legal/Compliance team immediately. They will reach out to you shortly.\nUser: You are stupid and useless! I will sue you!\nAssistant: I'm here to help! I can assist you with:\n\n🔄 **Returns & Refunds**\n🛡️ **Warranty Information**\n🚚 **Shipping & Tracking**\n🔐 **Account & Password Issues**\n💳 **Payment Questions**\n📞 **Contact Information**\n\nWhat specific question can I answer for you?",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "refund",
+    "general_inquiry",
+    "support",
+    "shipping"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-03T02:19:02.179249",
+  "updated_at": "2025-10-03T02:19:02.179252",
+  "resolved_at": null
+}

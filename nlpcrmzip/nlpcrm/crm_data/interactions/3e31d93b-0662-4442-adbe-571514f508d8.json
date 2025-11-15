@@ -1,0 +1,107 @@
+{
+  "interaction_id": "3e31d93b-0662-4442-adbe-571514f508d8",
+  "status": "pending",
+  "interaction_type": "support",
+  "intent": "support",
+  "sentiment": "positive",
+  "customer_query": "Hello, my name is Asmita Shah, I just wanted to take a moment to appreciate the quick and efficient support received yesterday. Your team was not only polite but also solved my issue within a minute. I am really impressed by the professionalism soon. Keep the good work best regards.",
+  "assistant_response": "**Contact Our Support Team**:\n📧 **Email**: support@company.com\n📞 **Phone**: 1-800-SUPPORT\n🕒 **Hours**: Monday-Friday, 9 AM to 6 PM EST\n🚨 **Emergency**: 1-800-EMERGENCY (after hours)\n\nWe're here to help!",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "69547b9b-85de-4f84-b007-3fea63d477cd",
+    "user_id": null,
+    "timestamp": "2025-10-06T15:41:42.352195",
+    "processing_time_ms": 27209,
+    "query_metadata": {
+      "timestamp": "2025-10-06T15:41:24.363860",
+      "original_query": "Hello, my name is Asmita Shah, I just wanted to take a moment to appreciate the quick and efficient support received yesterday. Your team was not only polite but also solved my issue within a minute. I am really impressed by the professionalism soon. Keep the good work best regards.",
+      "cleaned_query": "hello, my name is asmita shah, i just wanted to take a moment to appreciate the quick and efficient support received yesterday. your team was not only polite but also solved my issue within a minute. i am really impressed by the professionalism soon. keep the good work best regards.",
+      "detected_intents": [
+        "support",
+        "greeting",
+        "general_inquiry",
+        "shipping",
+        "refund",
+        "warranty"
+      ],
+      "primary_intent": "support",
+      "intent_confidence": 0.07894736842105263,
+      "extracted_entities": {
+        "time_entities": [
+          "soon",
+          "yesterday"
+        ],
+        "product_entities": [],
+        "action_entities": [],
+        "contact_entities": [
+          "support"
+        ],
+        "person_entities": [
+          "asmita s",
+          "asmita shah"
+        ],
+        "product_ids": [],
+        "customer_ids": [],
+        "emails": [],
+        "phone_numbers": []
+      },
+      "sentiment": {
+        "label": "positive",
+        "score": 0.9998143315315247
+      },
+      "language": "en",
+      "query_length": 283,
+      "word_count": 50,
+      "has_question_mark": false,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "priority": 5,
+      "processing_time_ms": 27209,
+      "retrieved_docs_count": 1,
+      "session_id": "69547b9b-85de-4f84-b007-3fea63d477cd"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "support",
+    "greeting",
+    "general_inquiry",
+    "shipping",
+    "refund",
+    "warranty"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": false,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-06T15:41:42.352427",
+  "updated_at": "2025-10-06T15:41:42.352435",
+  "resolved_at": null
+}

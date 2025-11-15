@@ -1,0 +1,20 @@
+{
+  "session_id": "c2ff4519-cd5f-4dbe-9e0e-8ed028cd7d2f",
+  "user_id": null,
+  "created_at": "2025-10-05T21:25:33.561694",
+  "last_updated": "2025-10-05T21:25:50.457523",
+  "messages": [
+    {
+      "message_id": "f5489db3-3188-4669-b96c-229a684ae5a5",
+      "role": "user",
+      "content": "میرا name priyanka zadav hai, میرا customer ID hai, 93591424514614 aur mena abhke aase ek product ID kharidad ha kharidad ha, jis ka product ID hai, 1292614 lekin problem ye hai, lekin problem ye hai ki mge bho haritan karna hai, dated je kerva 1 ke fint hope gay cohina ka apro",
+      "timestamp": "2025-10-05T21:25:50.455318"
+    },
+    {
+      "message_id": "15771459-fe2c-4c63-b1b6-804380f7dd13",
+      "role": "assistant",
+      "content": "I'm sorry to hear you're having an issue. I want to help resolve this for you right away.\n\n**Immediate Actions**:\n1. Contact our support team at support@company.com or 1-800-SUPPORT\n2. Reference this conversation for faster service\n3. Ask to speak with a supervisor if needed\n\n**Our Promise**: We'll work to resolve your issue within 24 hours.",
+      "timestamp": "2025-10-05T21:25:50.457491"
+    }
+  ]
+}

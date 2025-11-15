@@ -1,0 +1,106 @@
+{
+  "interaction_id": "bf44dd3b-6f56-4997-bf2b-ac40609c712c",
+  "status": "escalated",
+  "interaction_type": "escalation",
+  "intent": "refund",
+  "sentiment": "negative",
+  "customer_query": "Hello, my name is Priyanka Zadav and I am calling you regarding a complaint registration of receiving a damaged product. I want this product to return and I want the refund of the money. Could you please check your policy and tell me what can I do the next?",
+  "assistant_response": "I understand you received a damaged product and want a refund. Here's what you can do:\n\n✅ **Return Policy**: You can return products within 30 days of purchase\n✅ **Process**: Refunds are processed within 5-7 business days after we receive the item\n✅ **Next Step**: Contact our support team at support@company.com or call 1-800-SUPPORT to initiate the return\n\nWe'll make this right for you!",
+  "response_type": "answer",
+  "confidence": "high",
+  "metadata": {
+    "session_id": "467309d8-ec26-48de-a22a-17947ef2e4e2",
+    "user_id": null,
+    "timestamp": "2025-10-06T12:02:34.921824",
+    "processing_time_ms": 35129,
+    "query_metadata": {
+      "timestamp": "2025-10-06T12:02:11.840823",
+      "original_query": "Hello, my name is Priyanka Zadav and I am calling you regarding a complaint registration of receiving a damaged product. I want this product to return and I want the refund of the money. Could you please check your policy and tell me what can I do the next?",
+      "cleaned_query": "hello, my name is priyanka zadav and i am calling you regarding a complaint registration of receiving a damaged product. i want this product to return and i want the refund of the money. could you please check your policy and tell me what can i do the next?",
+      "detected_intents": [
+        "complaint",
+        "refund",
+        "greeting",
+        "general_inquiry",
+        "shipping",
+        "support"
+      ],
+      "primary_intent": "complaint",
+      "intent_confidence": 0.13333333333333333,
+      "extracted_entities": {
+        "time_entities": [],
+        "product_entities": [
+          "product"
+        ],
+        "action_entities": [
+          "return",
+          "refund"
+        ],
+        "contact_entities": [],
+        "person_entities": [
+          "priyanka zadav"
+        ],
+        "product_ids": [],
+        "customer_ids": [],
+        "emails": [],
+        "phone_numbers": []
+      },
+      "sentiment": {
+        "label": "negative",
+        "score": 0.9990426898002625
+      },
+      "language": "en",
+      "query_length": 257,
+      "word_count": 49,
+      "has_question_mark": true,
+      "has_exclamation": false,
+      "is_greeting": true,
+      "is_goodbye": false,
+      "requires_escalation": true,
+      "priority": 5,
+      "processing_time_ms": 35129,
+      "retrieved_docs_count": 1,
+      "session_id": "467309d8-ec26-48de-a22a-17947ef2e4e2"
+    },
+    "retrieved_docs_count": 1,
+    "confidence_score": null,
+    "escalation_reason": null,
+    "source_channel": "web_api"
+  },
+  "sources": [
+    {
+      "source_type": "knowledge_base",
+      "content": "Customer service knowledge base",
+      "relevance_score": 0.95,
+      "metadata": {
+        "source": "smart_assistant"
+      }
+    }
+  ],
+  "conversation_context": "",
+  "customer_id": null,
+  "agent_id": null,
+  "department": null,
+  "priority": 1,
+  "tags": [
+    "complaint",
+    "refund",
+    "greeting",
+    "general_inquiry",
+    "shipping",
+    "support"
+  ],
+  "suggested_actions": [
+    "Contact support if needed",
+    "Ask follow-up questions"
+  ],
+  "follow_up_questions": [
+    "Is there anything else I can help with?"
+  ],
+  "escalation_required": true,
+  "user_satisfaction_prediction": null,
+  "response_quality_score": null,
+  "created_at": "2025-10-06T12:02:34.922881",
+  "updated_at": "2025-10-06T12:02:34.922895",
+  "resolved_at": null
+}
